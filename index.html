@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Password Strength Checker</title>
+    <link rel="stylesheet" href="styles.css">
+    <!-- GSAP CDN -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+</head>
+<body>
+    <div class="container">
+        <h1>Password Strength Checker</h1>
+        <p>Enter your password to see its strength:</p>
+        <input type="password" id="passwordInput" placeholder="Enter your password" oninput="checkPasswordStrength()" />
+        <div class="strength-meter">
+            <div class="strength-bar" id="strengthBar"></div>
+        </div>
+        <div class="criteria">
+            <div><input type="checkbox" id="lengthCheck" disabled> At least 8 characters</div>
+            <div><input type="checkbox" id="uppercaseCheck" disabled> At least one uppercase letter</div>
+            <div><input type="checkbox" id="lowercaseCheck" disabled> At least one lowercase letter</div>
+            <div><input type="checkbox" id="numberCheck" disabled> At least one number</div>
+            <div><input type="checkbox" id="specialCharCheck" disabled> At least one special character</div>
+        </div>
+        <p id="feedback" class="feedback"></p>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>

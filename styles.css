@@ -1,0 +1,74 @@
+/* File: styles.css */
+
+body {
+    font-family: Arial, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    background: linear-gradient(to bottom right, #4facfe, #00f2fe);
+    color: #333;
+}
+
+.container {
+    background: #fff;
+    padding: 20px 40px;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+    text-align: center;
+    width: 100%;
+    max-width: 400px;
+}
+
+input[type="password"] {
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0;
+    border: 2px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+    transition: border 0.3s;
+}
+
+input[type="password"]:focus {
+    border-color: #4facfe;
+}
+
+.strength-meter {
+    position: relative;
+    height: 10px;
+    background: #eee;
+    border-radius: 5px;
+    margin: 15px 0;
+    overflow: hidden;
+}
+
+.strength-bar {
+    height: 100%;
+    width: 0;
+    background: linear-gradient(to right, red, orange, yellow, green);
+    transition: width 0.4s ease-in-out;
+}
+
+.criteria {
+    text-align: left;
+    font-size: 14px;
+    margin-top: 15px;
+}
+
+.criteria div {
+    margin: 5px 0;
+}
+
+input[type="checkbox"] {
+    margin-right: 10px;
+    pointer-events: none;
+}
+
+.feedback {
+    font-size: 16px;
+    font-weight: bold;
+    color: #ff3e3e;
+    margin-top: 10px;
+}
